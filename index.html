@@ -24,7 +24,10 @@
                colors: {
                  clifford: '#da373d',
                  'p-color':'#12121299'
-               }
+               },
+               backgroundImage:{
+                    'meet-bg':'url(./images/team.png)'                    
+               },
              }
            }
          }
@@ -33,18 +36,70 @@
        <style>
          .font-lato{
              font-family: 'Lato', sans-serif;
-         }
-         .hide{
-            display: none;
-         }
+         }         
        </style>
      
 </head>
 <body class="font-lato bg-white text-black">
     <header>
-        <h1 class="bg-white">this is header</h1>
+        
     </header>
-    <main class="container mx-auto hide">
+    <main class="container mx-auto">
+        <!-- Meet The team secsion -->
+        <section class="">
+            <div class="bg-no-repeat bg-cover bg-meet-bg p-4 text-white">
+                
+                <h1 class="my-5 lg:mt-32 text-2xl lg:text-5xl text-center font-[800]">Meet the team section</h1>
+                <p class="mb-5 text-center">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <div class="flex flex-col lg:flex-row justify-between lg:my-32">
+                    <!-- first member -->
+                    <div class="flex-1 flex flex-col items-center">
+                        <img src="./images/member1.png" alt="">
+                        <h1 class="lg:text-2xl font-bold">Awlad Hossain</h1>
+                        <p>Fruits Expert</p>
+                        <div class=" lg:text-2xl">                            
+                            <i class="fa-brands fa-facebook rounded-full"></i>
+                            <i class="fa-brands fa-twitter rounded-full"></i>                           
+                            <i class="fa-brands fa-linkedin  rounded-full"></i> 
+                        </div>
+                    </div>
+                    <!-- second member -->
+                    <div class="flex-1 flex flex-col items-center">
+                        <img src="./images/member2.png" alt="">
+                        <h1 class="text-2xl font-bold">Awlad Hossain</h1>
+                        <p>Fruits Expert</p>
+                        <div class=" text-2xl">                            
+                            <i class="fa-brands fa-facebook rounded-full"></i>
+                            <i class="fa-brands fa-twitter rounded-full"></i>                           
+                            <i class="fa-brands fa-linkedin  rounded-full"></i> 
+                        </div>
+                    </div>
+                    <!-- third member -->
+                    <div class="flex-1 flex flex-col items-center">
+                        <img src="./images/member3.png" alt="">
+                        <h1 class="text-2xl font-bold">Awlad Hossain</h1>
+                        <p>Fruits Expert</p>
+                        <div class=" text-2xl">                            
+                            <i class="fa-brands fa-facebook rounded-full"></i>
+                            <i class="fa-brands fa-twitter rounded-full"></i>                           
+                            <i class="fa-brands fa-linkedin  rounded-full"></i> 
+                        </div>
+                    </div>
+                    <!-- forth member -->
+                    <div class="flex-1 flex flex-col items-center">
+                        <img src="./images/member4.png" alt="">
+                        <h1 class="text-2xl font-bold">Awlad Hossain</h1>
+                        <p>Fruits Expert</p>
+                        <div class=" text-2xl">                            
+                            <i class="fa-brands fa-facebook rounded-full"></i>
+                            <i class="fa-brands fa-twitter rounded-full"></i>                           
+                            <i class="fa-brands fa-linkedin  rounded-full"></i> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
         <!-- Why Choose Us -->
         <section class="py-24 text-center mx-auto">
             <h3 class="text-5xl font-black mb-2">Why Choose Us</h3>
@@ -77,7 +132,7 @@
                     </div>
                 </div>
                 <div class="flex-1">
-                    <img class="h-[100%]" src="./images/whychoose1.png" alt="">
+                    <img class="h-[100%] w-[100%] flex justify-center items-center" src="./images/whychoose1.png" alt="">
                 </div>
                 <div class="flex-1">
                     <div class="text-right flex flex-row-reverse gap-3">
@@ -109,7 +164,7 @@
         </section>
 
     </main>
-    <footer class="bg-black hide text-white pt-12 p-4 mx-auto">
+    <footer class="bg-black text-white pt-12 p-4 mx-auto">
         <div class="flex gap-6 justify-center">
             <img src="images/logo.png" alt="">
             <h3 class="text-5xl font-black">Fruit Burst</h3>
