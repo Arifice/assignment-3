@@ -36,25 +36,59 @@
        <style>
          .font-lato{
              font-family: 'Lato', sans-serif;
-         }         
+         }  
+         .hide{
+            display: none;
+         }          
        </style>
      
 </head>
 <body class="font-lato bg-white text-black">
     <header>
-        
+        <!-- nav section -->
+        <div class="navbar bg-white lg:bg-red-400 lg:rounded-2xl">
+            <div class="navbar-start hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>                  
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            <div class="navbar-center">
+              <img src="./images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case font-black text-xl lg:text-5xl">FruitBurst</a>
+            </div>
+           
+            <div class="navbar-end">
+                <div class="bg-white hidden lg:flex p-4 rounded-full">
+                    <input class="bg-white" type="search" placeholder="Search here">
+                    <button class="bg-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>              
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>                  
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
     </header>
-    <main class="container mx-auto">
+    <main class="container mx-auto hide">
         <!-- Deal section -->
-        <section class="pt-24">
-            <div class="flex flex-col lg:flex-row gap-3 lg:gap-24">
-                <div class="space-y-3 px-4 flex-1">
-                    <h1 class="text-5xl font-black">Deal of the day</h1>
+        <section class="pt-8 lg:pt-24 px-3 lg:px-60">
+            <div class="flex flex-col lg:flex-row gap-3 lg:gap-24 items-center">
+                <div class="space-y-3 flex-1">
+                    <h1 class="text-5xl text-center lg:text-left font-black">Deal of the day</h1>
                     <p class="text-justify lg:max-w-[650px] text-'p-color">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-
                 </div>
                 <div>
-                    <div class="flex gap-3 p-4 flex-1">
+                    <div class="flex gap-3 flex-1 ">
                         <div>
                           <span class="countdown font-black text-5xl">
                             <span style="--value:29;"></span>
@@ -82,9 +116,9 @@
                       </div>
                 </div>
             </div>
-            <div class="flex flex-col lg:flex-row gap-3 lg:gap-24">
+            <div class="flex flex-col lg:flex-row gap-3">
                 <!-- first item -->
-                <div class="flex flex-col items-center space-y-3 p-4 lg:p-8">
+                <div class="flex-1 flex flex-col items-center space-y-3 p-4 lg:p-8">
                     <img class="p-4 lg:p-12" src="./images//fruit6.png" alt="">
                     <h4 class="text-2xl font-bold">12.90$ - 18.85$</h4>
                     <p>Apples</p>
@@ -104,7 +138,7 @@
                     <button class="text-[#F85559] font-bold">Details</button>
                 </div>
                 <!-- second item -->
-                <div class="flex flex-col items-center space-y-3 p-4 lg:p-8">
+                <div class="flex-1 flex flex-col items-center space-y-3 p-4 lg:p-8">
                     <img class="p-4 lg:p-12" src="./images//fruit7.png" alt="">
                     <h4 class="text-2xl font-bold">12.90$ - 18.85$</h4>
                     <p>Orange</p>
@@ -124,7 +158,7 @@
                     <button class="text-[#F85559] font-bold">Details</button>
                 </div>
                 <!-- third item -->
-                <div class="flex flex-col items-center space-y-3 p-4 lg:p-8">
+                <div class="flex-1 flex flex-col items-center space-y-3 p-4 lg:p-8">
                     <img class="p-4 lg:p-12" src="./images//fruit8.png" alt="">
                     <h4 class="text-2xl font-bold">12.90$ - 18.85$</h4>
                     <p>Red Dragon</p>
@@ -144,7 +178,7 @@
                     <button class="text-[#F85559] font-bold">Details</button>
                 </div>
                 <!-- forth item -->
-                <div class="flex flex-col items-center space-y-3 p-4 lg:p-8">
+                <div class="flex-1 flex flex-col items-center space-y-3 p-4 lg:p-8">
                     <img class="p-4 lg:p-12" src="./images//fruit9.png" alt="">
                     <h4 class="text-2xl font-bold">12.90$ - 18.85$</h4>
                     <p>Bananas</p>
@@ -166,7 +200,7 @@
             </div>
         </section>
         <!-- Meet The team secsion -->
-        <section class="pt-24">
+        <section class="pt-8 lg:pt-24 px-3 lg:px-60">
             <div class="bg-no-repeat bg-cover bg-meet-bg p-4 text-white">
                 
                 <h1 class="my-5 lg:mt-32 text-2xl lg:text-5xl text-center font-[800]">Meet the team section</h1>
@@ -221,20 +255,37 @@
             </div>
         </section>
         <!-- Why Choose Us -->
-        <section class="py-24 text-center mx-auto">
+        <section class="pt-8 lg:pt-24 px-3 lg:px-60">
             <h3 class="text-5xl font-black mb-2">Why Choose Us</h3>
             <p class="text-p-color mt-2">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+           
+            <div>
+                 <!-- left part -->
+                <div>
+                    <div class="flex flex-col gap-3 items-center text-center lg:justify-center">
+                        <div>
+                            <img class="h-16 w-16 p-3  rounded-full bg-[#1212121A]" src="./images/group 1.png" alt="">
+                        </div>                    
+                        <div>
+                            <h4 class="text-2xl mb-3 font-bold divide-y-2">Dedicated Team</h4>
+                            <hr class="boder t">
+                            <p class="text-gray-500 mt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="flex gap-4 flex-col lg:flex-row mt-7">
                 <div class="flex-1">
-                    <div class="text-left flex gap-3">
-                        <img class="h-16 w-16 p-2 rounded-full border-4 bg-[url('./images/Ellipse 2.png')]" src="./images/group 1.png" alt="">
+                    <div class="text-left flex flex-col lg:flex-row gap-3">
+                        <img class="h-16 w-16  rounded-full p-3 bg-[#1212121A]" src="./images/group 1.png" alt="">
                         <div>
                             <h4 class="text-2xl font-semibold mb-2">Dedicated Team</h4>
                             <hr class="border-t-2 border-red-500 w-20">
                             <p class="text-p-color mt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="text-left flex gap-3">
+                    <div class="text-left flex flex-col lg:flex-row gap-3">
                         <img class="h-16 w-16 p-2 rounded-full border-4 bg-[url('./images/Ellipse 2.png')]" src="./images/love 1.png" alt="">
                         <div>
                             <h4 class="text-2xl font-semibold mb-2">Fresh is Best</h4>
@@ -242,8 +293,10 @@
                             <p class="text-p-color mt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="text-left flex gap-3">
-                        <img class="h-16 w-16 p-2 rounded-full border-4 bg-[url('./images/Ellipse 2.png')]" src="./images//gift-box 1.png" alt="">
+                    <div class="text-left flex flex-col lg:flex-row items-center gap-3">
+                        <div>
+                            <img class="h-16 w-16 p-2 rounded-full border-4 bg-[url('./images/Ellipse 2.png')]" src="./images//gift-box 1.png" alt="">
+                        </div>
                         <div>
                             <h4 class="text-2xl font-semibold mb-2">Gift Certificates</h4>
                             <hr class="border-t-2 border-red-500 w-20">
@@ -283,12 +336,12 @@
             </div>
         </section>
     </main>
-    <footer class="bg-black text-white pt-12 p-4 mx-auto">
-        <div class="flex gap-6 justify-center">
+    <footer class="bg-black  text-white pt-12 p-4 mx-auto">
+        <div class="flex gap-6 justify-center items-center">
             <img src="images/logo.png" alt="">
-            <h3 class="text-5xl font-black">Fruit Burst</h3>
+            <h3 class="text-xl lg:text-5xl font-black">Fruit Burst</h3>
         </div>
-        <div class="flex flex-wrap gap-12 py-8 justify-center font-semibold">
+        <div class="flex flex-wrap justify-center  gap-12 py-8 font-semibold">
             <h4>Home</h4>
             <h4>About Us</h4>
             <h4>Shop</h4>
@@ -296,14 +349,13 @@
             <h4>Support</h4>
             <h4>My Account</h4>
         </div>
-        <div class="text-5xl flex flex-wrap gap-12 py-10 justify-center">
+        <div class=" text-xl lg:text-5xl flex flex-wrap gap-12 py-10 justify-center">
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-square-youtube"></i>
             <i class="fa-brands fa-linkedin"></i>
             <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-apple"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-brands fa-apple"></i>            
         </div>
        
     </footer>
